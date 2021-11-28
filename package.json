@@ -1,0 +1,22 @@
+{
+  "name": "keepnotes",
+  "version": "1.0.0",
+  "description": "A Notes Keeping Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavj177/KeepNotes.git"
+  },
+  "author": "Vaibhav Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaibhavj177/KeepNotes/issues"
+  },
+  "homepage": "https://github.com/vaibhavj177/KeepNotes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
