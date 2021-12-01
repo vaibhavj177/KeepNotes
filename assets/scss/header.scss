@@ -5,13 +5,14 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: orange;
+    background-color: #F4A950;
     padding: 1%;
 
     h1{
         font-size: 2.8rem;
         font-family: 'Forte';
         margin: 0;
+        color: #161B21;
         padding-left: 2rem;
     }
     nav ul li{
@@ -20,13 +21,19 @@ header{
         font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
+        
         margin-right: 2.5rem;
         list-style: none;
         img{
             position: relative;
             top: 3px;
             width: 1.5rem;
+            color: #161B21;
             height: 1.5rem;
+        }
+        a{
+            color: #161B21;
+            text-decoration: none;
         }
     }
     nav ul li:hover{

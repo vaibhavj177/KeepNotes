@@ -8,6 +8,7 @@ const MongoStore = require('connect-mongo');
 const app = express();
 
 app.use(expressLayouts);
+app.use(express.urlencoded());
 app.use(sassMiddleware({
     src: './assets/scss',
     dest: './assets/css',

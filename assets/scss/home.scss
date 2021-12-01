@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #161B21 !important;
+    .padding{
+        height: 16vh;
+    }
+    #create-tool{
+        background-color: #F4A950;
+        margin: auto;
+        width: 50vw;
+        height: auto;
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        button{
+            position: relative;
+            left: 40%;
+            width: 20%;
+            height: 50px;
+            color: #161B21;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    }
+}
