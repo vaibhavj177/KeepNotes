@@ -1,0 +1,28 @@
+header {
+  margin: 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: orange;
+  padding: 1%; }
+  header h1 {
+    font-size: 2.8rem;
+    font-family: 'Forte';
+    margin: 0;
+    padding-left: 2rem; }
+  header nav ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 2.5rem;
+    list-style: none; }
+    header nav ul li img {
+      position: relative;
+      top: 3px;
+      width: 1.5rem;
+      height: 1.5rem; }
+  header nav ul li:hover {
+    cursor: pointer; }
