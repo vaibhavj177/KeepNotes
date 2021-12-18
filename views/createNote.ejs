@@ -1,7 +1,16 @@
 <div>
-    <form action="/create-note/save-note" method="POST">
-        <input type="text" placeholder="Enter Title" name= "title"required>
-        <input type="text" placeholder="Enter Notes" name="note" required>
-        <input type="submit">
-    </form>
+    <%if(locals.user) {%>
+        <form action="/create-note/save-note" method="POST">
+            <input type="text" placeholder="Enter Title" name= "title"required>
+            <input type="text" placeholder="Enter Notes" name="note" required>
+            <input type="hidden" name="user" value = "<%= locals.user._id %>">
+            <input type="submit">
+        </form>
+        
+        
+    <%} else{ %>
+        <h1>Please Login</h1>
+        
+    <% } %>
+    
 </div>

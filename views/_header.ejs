@@ -6,7 +6,12 @@
             <li><a href='/notes'>Notes</a></li>
             <li>
                 <img src="/images/user-circle-solid.svg" alt="login">
-                Login
+                <%  if(locals.user) {%>
+                    <a href="/users/sign-out"><%=locals.user.name%></a>
+                <%  } else{ %>
+                    <a href="/users/sign-in">Login</a>
+                <% } %>
+                
             </li>
         </ul>
     </nav>

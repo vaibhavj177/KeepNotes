@@ -1,8 +1,21 @@
 <link rel="stylesheet" href="/css/notes.css">
-<% for(notei of notes) {%>
-    <div>
-      <p><%= notei.title %></p>
-      <p><%= notei.note %></p>
-    </div>
-    
-<%}%>
+
+<% if(locals.user) { %>
+  <% found = false %>
+  <% for(notei of notes) {%>
+    <%  if(locals.user._id.equals(notei.user._id)) {%>
+      <div>
+        <p><%= notei.title %></p>
+        <p><%= notei.note %></p>
+      </div>
+      <% found = true %>
+    <% }%>
+  <%}%>
+  <%if(found == false){%>
+    <h1>No records Found</h1>
+  <%}%>
+<% } else { %>
+  <h1>Please Login First!</h1>
+  <button><a href="/users/sign-in">Sign In</a></button>  
+<% } %>
+
